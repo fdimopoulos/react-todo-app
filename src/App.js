@@ -59,6 +59,9 @@ function App() {
     return (
         <div className="app">
             <h1>To-Do List App</h1>
+            {new Date().toLocaleDateString("en-GB", {
+                dateStyle: "full"
+            })}
             <form onSubmit={handleSubmit}>
                 <input 
                     type="text" 
